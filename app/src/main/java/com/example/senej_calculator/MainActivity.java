@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         androidx.appcompat.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.action_bar_bg));
-
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         actionBar.setDisplayShowCustomEnabled(true);
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         sResult.setText("");
         h2.setText("");
         h2Result.setText("");
-        detalPercentage.setText("5");
+        detalPercentage.setText("25");
         sPercentage.setText("-8");
         h2Percentage.setText("-15");
     }

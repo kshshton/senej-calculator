@@ -7,7 +7,9 @@
         <entry key="app/src/main/res/drawable/action_bar_bg.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/btn_bg.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/editview_border.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/gradient_bg.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1485" />
+        <entry key="app/src/main/res/drawable/view_border.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.34270833333333334" />
         <entry key="app/src/main/res/layout/logo.xml" value="0.23777173913043478" />
       </map>
