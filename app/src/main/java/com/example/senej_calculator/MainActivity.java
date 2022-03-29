@@ -2,7 +2,9 @@ package com.example.senej_calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -37,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
         h2 = (EditText) findViewById(R.id.editTextNumber4);
         h2Percentage = (EditText) findViewById(R.id.editTextNumber13);
         h2Result = (EditText) findViewById(R.id.editTextNumber2);
+
+        androidx.appcompat.app.ActionBar actionBar = getSupportActionBar();
+        actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.action_bar_bg));
+
+
+        actionBar.setDisplayShowCustomEnabled(true);
+        LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = inflater.inflate(R.layout.logo, null);
+        actionBar.setCustomView(view);
     }
 
     public void count(View view) {

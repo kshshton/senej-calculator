@@ -12,6 +12,8 @@
         android:layout_height="wrap_content"
         android:onClick="clear"
         android:text="Wyczyść"
+        android:textColor="#EAEAEA"
+        android:background="@drawable/btn_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.819"
@@ -21,6 +23,7 @@
 
     <EditText
         android:id="@+id/editTextNumber6"
+        android:background="@drawable/view_border"
         android:layout_width="122dp"
         android:layout_height="46dp"
         android:layout_marginStart="36dp"
@@ -115,30 +118,30 @@
         app:layout_constraintVertical_bias="0.329" />
 
     <TextView
-        android:gravity="center"
         android:id="@+id/textView3"
         android:layout_width="411dp"
         android:layout_height="34dp"
+        android:gravity="center"
         android:text="H1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintVertical_bias="0.094" />
 
     <TextView
-        android:gravity="center"
         android:id="@+id/textView4"
         android:layout_width="411dp"
         android:layout_height="41dp"
+        android:gravity="center"
         android:text="S"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.433" />
+        app:layout_constraintVertical_bias="0.455" />
 
     <TextView
         android:id="@+id/textView5"
@@ -151,7 +154,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.643" />
+        app:layout_constraintVertical_bias="0.672" />
 
     <Button
         android:id="@+id/count"
@@ -159,6 +162,8 @@
         android:layout_height="wrap_content"
         android:onClick="count"
         android:text="Oblicz"
+        android:textColor="#EAEAEA"
+        android:background="@drawable/btn_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.238"
@@ -168,6 +173,7 @@
 
     <EditText
         android:id="@+id/editTextNumber7"
+        android:background="@drawable/view_border"
         android:layout_width="122dp"
         android:layout_height="46dp"
         android:layout_marginEnd="36dp"
@@ -182,6 +188,7 @@
 
     <EditText
         android:id="@+id/editTextNumber2"
+        android:background="@drawable/view_border"
         android:layout_width="122dp"
         android:layout_height="46dp"
         android:layout_marginEnd="36dp"
@@ -196,19 +203,20 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="125dp"
+        android:layout_width="122dp"
         android:layout_height="35dp"
         android:gravity="center"
         android:text="Brutto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintHorizontal_bias="0.124"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.829" />
 
     <EditText
         android:id="@+id/editTextNumber4"
+        android:background="@drawable/view_border"
         android:layout_width="122dp"
         android:layout_height="46dp"
         android:layout_marginStart="36dp"
@@ -224,19 +232,20 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="125dp"
+        android:layout_width="122dp"
         android:layout_height="35dp"
         android:gravity="center"
         android:text="Netto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintHorizontal_bias="0.875"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.829" />
 
     <EditText
         android:id="@+id/editTextNumber8"
+        android:background="@drawable/view_border"
         android:layout_width="122dp"
         android:layout_height="46dp"
         android:layout_marginStart="36dp"
@@ -251,6 +260,7 @@
 
     <EditText
         android:id="@+id/editTextNumber3"
+        android:background="@drawable/view_border"
         android:layout_width="122dp"
         android:layout_height="46dp"
         android:layout_marginEnd="36dp"
@@ -265,6 +275,7 @@
 
     <EditText
         android:id="@+id/editTextNumber"
+        android:background="@drawable/view_border"
         android:layout_width="122dp"
         android:layout_height="46dp"
         android:layout_marginStart="36dp"
@@ -279,6 +290,7 @@
 
     <EditText
         android:id="@+id/editTextNumber5"
+        android:background="@drawable/view_border"
         android:layout_width="122dp"
         android:layout_height="46dp"
         android:layout_marginEnd="36dp"
@@ -292,15 +304,16 @@
         app:layout_constraintVertical_bias="0.329" />
 
     <TextView
-        android:gravity="center"
         android:id="@+id/textView2"
         android:layout_width="411dp"
         android:layout_height="41dp"
+        android:gravity="center"
         android:text="Detal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24" />
+        app:layout_constraintVertical_bias="0.257" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
