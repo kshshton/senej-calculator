@@ -21,24 +21,24 @@ public class MainActivity extends AppCompatActivity {
     private EditText h2;
     private EditText h2Percentage;
     private EditText h2Result;
-    private double vat = 23;
+    private final double vat = 23;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        h1 = (EditText) findViewById(R.id.editTextNumber6);
-        h1Result = (EditText) findViewById(R.id.editTextNumber7);
-        detal = (EditText) findViewById(R.id.editTextNumber);
-        detalPercentage = (EditText) findViewById(R.id.editTextNumber10);
-        detalResult = (EditText) findViewById(R.id.editTextNumber5);
-        s = (EditText) findViewById(R.id.editTextNumber8);
-        sPercentage = (EditText) findViewById(R.id.editTextNumber12);
-        sResult = (EditText) findViewById(R.id.editTextNumber3);
-        h2 = (EditText) findViewById(R.id.editTextNumber4);
-        h2Percentage = (EditText) findViewById(R.id.editTextNumber13);
-        h2Result = (EditText) findViewById(R.id.editTextNumber2);
+        h1 = findViewById(R.id.editTextNumber6);
+        h1Result = findViewById(R.id.editTextNumber7);
+        detal = findViewById(R.id.editTextNumber);
+        detalPercentage = findViewById(R.id.editTextNumber10);
+        detalResult = findViewById(R.id.editTextNumber5);
+        s = findViewById(R.id.editTextNumber8);
+        sPercentage = findViewById(R.id.editTextNumber12);
+        sResult = findViewById(R.id.editTextNumber3);
+        h2 = findViewById(R.id.editTextNumber4);
+        h2Percentage = findViewById(R.id.editTextNumber13);
+        h2Result = findViewById(R.id.editTextNumber2);
 
         androidx.appcompat.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.action_bar_bg));
