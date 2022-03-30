@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText h2;
     private EditText h2Percentage;
     private EditText h2Result;
-    private final double vat = 23;
+    private final double vat = 1.23;
 
 
     @Override
@@ -53,27 +53,31 @@ public class MainActivity extends AppCompatActivity {
     public void count(View view) {
         try {
             double h1Value = Double.parseDouble(h1.getText().toString());
-            h1Result.setText(String.valueOf(Math.round(percentageResult(h1Value, -vat))));
+            h1Result.setText(String.valueOf(Math.round(nettoResult(h1Value))));
 
             double detalPercentageValue = Double.parseDouble(detalPercentage.getText().toString());
             detal.setText(String.valueOf(Math.round(percentageResult(h1Value, detalPercentageValue))));
             double detalValue = Double.parseDouble(detal.getText().toString());
-            detalResult.setText(String.valueOf(Math.round(percentageResult(detalValue, -vat))));
+            detalResult.setText(String.valueOf(Math.round(nettoResult(detalValue))));
 
             double sPercentageValue = Double.parseDouble(sPercentage.getText().toString());
             s.setText(String.valueOf(Math.round(percentageResult(h1Value, sPercentageValue))));
             double sValue = Double.parseDouble(s.getText().toString());
-            sResult.setText(String.valueOf(Math.round(percentageResult(sValue, -vat))));
+            sResult.setText(String.valueOf(Math.round(nettoResult(sValue))));
 
             double h2PercentageValue = Double.parseDouble(h2Percentage.getText().toString());
             h2.setText(String.valueOf(Math.round(percentageResult(h1Value, h2PercentageValue))));
             double h2Value = Double.parseDouble(h2.getText().toString());
-            h2Result.setText(String.valueOf(Math.round(percentageResult(h2Value, -vat))));
+            h2Result.setText(String.valueOf(Math.round(nettoResult(h2Value))));
         } catch (Exception e) {}
     }
 
     public double percentageResult(double value, double percentage) {
         return value + (value * (percentage / 100));
+    }
+
+    public double nettoResult(double value) {
+        return value / vat;
     }
 
     public void clear(View view) {
